@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<table version="1.000000" name="TinCanStatement" numRows="1" numCols="9" flags="9" tableType="0">
+    <rows>
+        <row id="0" name=""/>
+    </rows>
+    <columns>
+        <column id="0" name="actor_name" type="1" readonly="1">Sally Glider</column>
+        <column id="1" name="actor_mbox" type="1" readonly="0">mailto:sally@example.com</column>
+        <column id="2" name="verb_id" type="1" readonly="1">http://adlnet.gov/expapi/verbs/experienced</column>
+        <column id="3" name="verb_display_en-US" type="1" readonly="0">experienced</column>
+        <column id="4" name="object_id" type="1" readonly="0">http://example.com/activities/solo-hang-gliding</column>
+        <column id="5" name="object_definition_name_en-US" type="1" readonly="1">Solo Hang Gliding</column>
+        <column id="6" name="result_completion" type="4" readonly="120">1</column>
+        <column id="7" name="result_success" type="4" readonly="0">1</column>
+        <column id="8" name="result_scaled_score" type="3" readonly="1">0.950000</column>
+    </columns>
+</table>
