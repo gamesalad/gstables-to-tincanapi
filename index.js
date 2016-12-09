@@ -6,6 +6,8 @@ var express = require('express'),
 
 var app = express();
 
+var lastPostedStatement = null;
+
 // parse application/json
 app.use(bodyParser());
 app.post('/', function (req, res) {
@@ -58,6 +60,8 @@ app.post('/', function (req, res) {
     statement["id"] = uuid.v1();
     statement["timestamp"] = new Date();
 
+    lastPostedStatement = statement;
+
     // Debug to see the resulting statement object.
     console.log(statement);
   })
@@ -66,6 +70,12 @@ app.post('/', function (req, res) {
   res.write(JSON.stringify({"Status":"Success"}));
   res.end();
 });
+
+app.get('/', function(req, res) {
+    var table = GSTable.create();
+    
+    res.end();
+})
 
 app.listen(3000);
 console.log("GameSalad Network to Tin Can API Converter App Started");

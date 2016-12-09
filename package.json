@@ -1,12 +1,12 @@
 {
-  "name": "gstables-tincan-js",
+  "name": "gstables-to-tincanapi",
   "version": "1.0.0",
-  "description": "A sample app that can bridge a GameSalad table to a tincan statement",
+  "description": "A sample node.js app that accepts data from the GameSalad \"Network Send Table to URL\" Behavior and converts it into a Tin Can API Statement.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Tan Tran <oss@gamesalad.com> (http://gamesalad.com)",
+  "author": "Tan Tran <tan@gamesalad.com> (http://gamesalad.com)",
   "license": "MIT",
   "dependencies": {
     "body-parser": "^1.14.1",
